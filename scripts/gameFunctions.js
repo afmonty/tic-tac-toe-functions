@@ -11,7 +11,16 @@
  * result in true.
  */
 function validateGameType(gameTypeString) {
-
+	if((gameTypeString === 1) || (gameTypeString === "one")){
+		gameTypeString = gameTypeString.toLowerCase();
+		return 1;
+	} else if 
+		((gameTypeString === 2) || (gameTypeString === "two")) {
+		gameTypeString = gameTypeString.toLowerCase();
+		return 2;
+	} else {
+		return false;
+	}	
 }
 
 /*
@@ -19,15 +28,30 @@ function validateGameType(gameTypeString) {
  * letters, hyphens or spaces and must contain at least one letter. Returns
  * false if the name is not valid.
  */
-function validateName(name) {
-
+ function validateName(name) {
+for(var i = 0; i < name.length; i++){
+	var letters =/\-[a-z A-Z]+/;
+	if (name === letters){
+		console.log("true");
+		alert("hi" + name);
+	} 
+	else if (name == "") {
+		console.log("false");
+		}
+		else{
+			console.log("false");
+		}
+	}
 }
+
 
 /*
  * Randomly generates and returns a name for a computer player.
  */
 function generateComputerName() {
-
+	var nameList = ["Sengl", "Gandolf", "Loiosh", "Belgarion"];
+	var randomValue = nameList[Math.floor(nameList.length * Math.random())];
+	return randomValue)
 }
 
 /*
@@ -38,7 +62,16 @@ function generateComputerName() {
  * insensitive, so it should accept both 'Y' and 'y' for example.
  */
 function validateYesNo(yesNoString) {
-
+	if((yesNoString === "yes") || (yesNoString === "y")){
+		yesNoString = yesNoString.toLowerCase();
+		return true;
+	} else if 
+		((yesNoString === "no") || (yesNoString === "n")) {
+		yesNoString = yesNoString.toLowerCase();
+		return false;
+	} else {
+		return false;
+	}	
 }
 
 /*
