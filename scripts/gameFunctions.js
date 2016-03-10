@@ -102,7 +102,7 @@ function getNextPlayer(currentPlayer) {
  *   ~~~~~~~~~~~~~
  */
 function getGameBoardString(gameBoard) {
-
+	var gameBoard = '    1     2     3\n ~~~~~~~~~~~~~~~~~~~\n1|     |     |     |\n~~~~~~~~~~~~~~~~~~~~\n2|     |     |     |\n~~~~~~~~~~~~~~~~~~~~~\n3|     |     |     |\n~~~~~~~~~~~~~~~~~~~~~';
 }
 
 /*
